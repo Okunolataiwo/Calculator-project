@@ -1,0 +1,221 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+}
+body{
+    /* background: black; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    padding: 1%;
+    margin: auto;
+    position: relative;
+    width: 30%;
+}
+@media screen and (max-width: 500px){
+    .container{
+        width: 95%;
+        margin: auto;
+        padding: 30px 5px;
+    }
+}
+.calculator{
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background: rgb(52, 51, 51);
+    border: 2px solid green;
+    color: white;
+    position: relative;
+}
+.sta, .science{
+    cursor: pointer;
+}
+.stand{
+    display: none;
+}
+.scientific{
+    display: none;
+}
+.active{
+    display: block;
+}
+.top{
+    margin: 8px;
+    color: gray;
+    font-size: 23px;
+}
+.menus, .standard{
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+    justify-content: space-between;
+    font-size: 25px;
+}
+.standard{
+    position: relative;
+    gap: 2rem;
+}
+.rot{
+    font-size: 15px;
+}
+.standard p{
+    margin-left: 50px;
+}
+.stand .menus{
+    margin-top: 17px;
+    margin-right:20px ;
+}
+.scientific .menus{
+    margin-top: 20px;
+    margin-right:20px ;
+}
+#bar{
+    position: absolute;
+    font-size: 20px;
+    top: 10%;
+    left: 5%;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 1s;
+    z-index: 9999;
+}
+
+#bar:hover{
+transform: scale(1.2);
+}
+#initial-value, #answer{
+    text-align: right;
+    float: right;
+    outline: none;
+    margin: 10px 15px;
+    font-size: 17px;
+    width: fit-content;
+    border: none;
+    background: none;
+    color: gray;
+}
+
+#answer{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px;
+    /* display: none; */
+}
+.buttons.active{
+    display: block;
+}
+button{
+    flex-basis: 24%;
+    padding: 17px 15px;
+    background: rgb(27, 26, 26);
+    color: white;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    margin: 1px;
+}
+button:hover{
+    background: gray;
+}
+.arithmetic:hover{
+    background: lightgreen;
+    color: black;
+}
+.number{
+    background: rgb(12, 12, 12);
+    font-weight: bold;
+    font-size: 25px;
+}
+.options{
+    position: absolute;
+    width: 75%;
+    height: 92%;
+    background: rgb(29, 29, 29);
+    z-index: 1;
+    top: 8%;
+    left: -1500px;
+    /* transform: scale(0); */
+    transition: 200ms;
+    padding: 55px 10px;
+}
+.options.active{
+    left: 0;
+}
+options.none{
+    display: none;
+}
+.close{
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 1.2%;
+    display: none;
+    left: 4.3%;
+}
+.options p{
+    font-size: 18px;
+}
+
+
+/* scientific  */
+.rot{
+    font-size: 15px;
+}
+
+#initial-value2, #answer2{
+    text-align: right;
+    float: right;
+    outline: none;
+    margin: 10px 15px;
+    font-size: 17px;
+    width: 96%;
+    border: none;
+    background: none;
+    color: gray;
+}
+
+#answer2{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px;
+}
+.buttons.active{
+    display: block;
+}
+.scientific button{
+    flex-basis: 19%;
+    padding: 15px 15px;
+    background: rgb(27, 26, 26);
+    color: white;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    margin: 1px;
+}
+button:hover{
+    background: gray;
+}
+.arithmetic:hover{
+    background: lightgreen;
+    color: black;
+}
+.scientific .number{
+    background: rgb(12, 12, 12);
+    font-weight: bold;
+    font-size: 25px;
+}
