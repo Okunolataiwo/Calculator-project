@@ -15,9 +15,9 @@ body{
 }
 @media screen and (max-width: 500px){
     .container{
-        width: 95%;
+        width: 94%;
         margin: auto;
-        padding: 30px 5px;
+        padding: 20px 0;
     }
 }
 .calculator{
